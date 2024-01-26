@@ -1,0 +1,7 @@
+input 73
+73 / 25 = 2.92
+truncate to 2 so this will equal 2 variable a = 2
+return 2 for quater function
+25 x 2 = 50
+73 - 50 = 23
+this 23 = input - 25 * a
