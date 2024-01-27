@@ -1,11 +1,10 @@
-#include <cs50.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 bool triangle(int a, int b, int c);
 
-int main(int argc, string argv[])
+int main(int argc, char* argv[])
 {
     if (argc != 4)
     {
@@ -20,7 +19,7 @@ int main(int argc, string argv[])
     else
     {
         bool n = triangle(atoi(argv[1]), atoi(argv[2]), atoi(argv[3]));
-        if (n)
+        if (!n)
         {
             printf("A triangle with lengths of %d, %d, and %d is possible.\n", atoi(argv[1]), atoi(argv[2]), atoi(argv[3]));
             return 0;
@@ -35,12 +34,6 @@ int main(int argc, string argv[])
 
 bool triangle(int a, int b, int c)
 {
-    if (a + b <= c || a + c <= b || b + c <= a)
-    {
-        return false;
-    }
-    else
-    {
-        return true;
-    }
+    return (a + b <= c || a + c <= b || b + c <= a);
+
 }
