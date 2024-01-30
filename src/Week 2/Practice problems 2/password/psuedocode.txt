@@ -1,0 +1,7 @@
+find the strlen of the string
+store it in variable n
+iterate through it with for loop
+i is initialized to 0, while i < n; increment i by 1
+
+
+criteria[4]
